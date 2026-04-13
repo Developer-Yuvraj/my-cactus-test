@@ -30,7 +30,7 @@ jobs:
         uses: withastro/action@v3
         # This action automatically detects npm/pnpm/yarn and runs the build
         with:
-          pnpm-version: 9 # This line fixes the error!
+          pnpm-version: 10 # This line fixes the error!
 
   deploy:
     needs: build
