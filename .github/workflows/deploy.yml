@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -27,7 +27,7 @@ jobs:
           node-version: 22
          
       - name: Install, build, and upload your site
-        uses: withastro/action@v3
+        uses: withastro/action@v6
 
   deploy:
     needs: build
@@ -38,4 +38,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
