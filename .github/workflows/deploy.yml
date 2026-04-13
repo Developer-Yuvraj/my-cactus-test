@@ -28,9 +28,6 @@ jobs:
          
       - name: Install, build, and upload your site
         uses: withastro/action@v3
-        # This action automatically detects npm/pnpm/yarn and runs the build
-        with:
-          pnpm-version: 10 # This line fixes the error!
 
   deploy:
     needs: build
